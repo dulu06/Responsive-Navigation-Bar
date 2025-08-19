@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Places</title>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Travel Explorer</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Photography</a></li>
+      <li><a href="#">Bikes</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <section class="explore">
+    <h2>Explore Places</h2>
+    <div class="places">
+
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=800&q=60" alt="Leh">
+        <h3>Leh</h3>
+        <p>Snow-capped mountains, rugged terrain, and serene landscapes.</p>
+      </div>
+
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1578981320111-c7e9426cd6e8?auto=format&fit=crop&w=800&q=60" alt="Assam">
+        <h3>Assam</h3>
+        <p>Lush green tea gardens, rivers, and peaceful countryside vibes.</p>
+      </div>
+
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1635346537940-9d51faeb6e32?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNpa2tpbXxlbnwwfHwwfHx8MA%3D%3D" alt="Sikkim">
+        <h3>Sikkim</h3>
+        <p>Beautiful monasteries, snow-clad peaks, and rich culture.</p>
+      </div>
+
+      <div class="place-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Goa">
+        <h3>Goa</h3>
+        <p>Golden beaches, nightlife, and Portuguese heritage.</p>
+      </div>
+
+      <div class="place-card">
+        <img src="https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VyYWxhJTIwdHJhdmVsfGVufDB8fDB8fHww" alt="Kerala">
+        <h3>Kerala</h3>
+        <p>Backwaters, lush greenery, and serene beaches.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
